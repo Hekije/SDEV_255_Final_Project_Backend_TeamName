@@ -5,7 +5,7 @@ const Course = db.model("Course", {
   department: { type: String, required: true },
   course_number: { type: String, required: true },
   credits: { type: Number, required: true },
-  description: { String },
+  description: { type: String },
   instructor_ids: [String],
   student_ids: [String],
 });
